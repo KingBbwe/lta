@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpopo Tourism Agency - Marketing Efficacy Assessment</title>
+    <meta name="description" content="Stakeholder Research Questionnaire 2025">
+    <meta name="theme-color" content="#2E8B57">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>Limpopo Tourism Agency</h1>
+                    <p>Marketing & Program Efficacy Assessment 2025</p>
+                </div>
+                <div class="progress-section">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">Section 1 of 7</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div id="welcomeScreen" class="screen active">
+                <div class="welcome-container">
+                    <div class="welcome-header">
+                        <h2>Welcome to the LTA Research Study</h2>
+                        <p>Your expert insights are crucial to helping us evaluate and optimize our destination marketing initiatives</p>
+                    </div>
+                    
+                    <div class="consent-section">
+                        <h3>Research Consent</h3>
+                        <div class="consent-content">
+                            <p>By proceeding with this questionnaire, you confirm that:</p>
+                            <ul>
+                                <li>✓ You understand the purpose of this research</li>
+                                <li>✓ You consent to participate voluntarily</li>
+                                <li>✓ You understand your responses will be kept confidential</li>
+                                <li>✓ You may withdraw at any time without consequence</li>
+                            </ul>
+                        </div>
+                        <div class="time-estimate">
+                            <strong>Estimated completion time: 15-20 minutes</strong>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button id="startQuestionnaire" class="btn-primary">Begin Assessment</button>
+                        <button id="resumeSession" class="btn-secondary" style="display: none;">Resume Previous Session</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="questionnaireScreen" class="screen">
+                <div class="section-header">
+                    <h2 id="sectionTitle">Screening & Demographics</h2>
+                    <p id="sectionDescription">This section establishes your stakeholder profile</p>
+                </div>
+
+                <div class="question-container">
+                    <div id="currentQuestion"></div>
+                </div>
+
+                <div class="navigation-controls">
+                    <button id="prevBtn" class="btn-secondary" disabled>Previous</button>
+                    <div class="nav-center">
+                        <span id="questionCounter">Q1 of 90</span>
+                    </div>
+                    <button id="nextBtn" class="btn-primary">Next</button>
+                </div>
+            </div>
+
+            <div id="completionScreen" class="screen">
+                <div class="completion-container">
+                    <div class="completion-header">
+                        <h2>Thank You for Completing the Assessment!</h2>
+                        <div class="completion-icon">✓</div>
+                    </div>
+                    
+                    <div class="completion-content">
+                        <p>Your expert insights are invaluable to the Limpopo Tourism Agency as we work to optimize our marketing effectiveness and position Limpopo as a leading tourism destination.</p>
+                        
+                        <div class="submission-options">
+                            <button id="submitFinal" class="btn-primary">Submit Responses</button>
+                            <button id="downloadReport" class="btn-secondary">Download Personal Report</button>
+                            <button id="participateFollowup" class="btn-outline">Participate in Follow-up Research</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <div class="footer-content">
+                <p>Limpopo Tourism Agency &copy; 2025 | 
+                   <a href="mailto:research.lta@tourism.limpopo.gov.za">research.lta@tourism.limpopo.gov.za</a> | 
+                   <a href="https://www.golimpopo.com" target="_blank">www.golimpopo.com</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/db.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="js/renderer.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/analytics.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
